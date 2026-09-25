@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Science of Global Challenges</title>
+
+    <style>
+        * {
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        body {
+            margin: 0;
+            min-height: 100vh;
+            background: linear-gradient(135deg, #ecfeff, #eff6ff);
+            color: #1e293b;
+        }
+
+        header {
+            background: linear-gradient(135deg, #0891b2, #2563eb);
+            color: white;
+            text-align: center;
+            padding: 50px 20px;
+        }
+
+        header h1 {
+            font-size: 40px;
+        }
+
+        .container {
+            width: 90%;
+            max-width: 1000px;
+            margin: 40px auto;
+        }
+
+        .card {
+            background: white;
+            padding: 30px;
+            margin-bottom: 20px;
+            border-radius: 20px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.08);
+        }
+
+        .card h2 {
+            color: #0e7490;
+        }
+
+        .resources {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 18px;
+        }
+
+        .resource {
+            background: #ecfeff;
+            padding: 22px;
+            border-radius: 15px;
+            text-align: center;
+            font-weight: bold;
+        }
+
+        .back {
+            display: inline-block;
+            margin-top: 20px;
+            padding: 12px 20px;
+            background: #0891b2;
+            color: white;
+            text-decoration: none;
+            border-radius: 10px;
+        }
+
+        footer {
+            margin-top: 50px;
+            background: #164e63;
+            color: white;
+            text-align: center;
+            padding: 22px;
+        }
+    </style>
+</head>
+
+<body>
+
+<header>
+    <h1>🌍 Science of Global Challenges</h1>
+    <p>Global challenges, scientific perspectives and solutions</p>
+</header>
+
+<div class="container">
+
+    <div class="card">
+        <h2>About This Subject</h2>
+        <p>
+            Explore major global challenges, scientific perspectives and solutions.
+        </p>
+    </div>
+
+    <div class="card">
+        <h2>📚 Resources</h2>
+
+        <div class="resources">
+            <div class="resource">📖 Lecture Notes</div>
+            <div class="resource">📝 Assignments</div>
+            <div class="resource">📋 Past Papers</div>
+            <div class="resource">🌱 Research Topics</div>
+        </div>
+
+        <a href="{% url 'subjects' %}" class="back">← Back to Subjects</a>
+    </div>
+
+</div>
+
+<footer>
+    <p>© 2026 Usman Tanveer | All Rights Reserved</p>
+</footer>
+
+</body>
+</html>

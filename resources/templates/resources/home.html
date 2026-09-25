@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>My Learning Portal</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        body {
+            min-height: 100vh;
+            background: linear-gradient(135deg, #eef2ff, #f5f3ff, #ecfeff);
+            color: #1e293b;
+        }
+
+        /* Navigation */
+        nav {
+            background: rgba(255, 255, 255, 0.95);
+            padding: 18px 7%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            box-shadow: 0 5px 20px rgba(0, 0, 0, 0.08);
+        }
+
+        .logo {
+            font-size: 24px;
+            font-weight: bold;
+            color: #4f46e5;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: #334155;
+            font-weight: bold;
+            margin-left: 25px;
+        }
+
+        nav a:hover {
+            color: #4f46e5;
+        }
+
+        /* Hero Section */
+        .hero {
+            min-height: 75vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            padding: 60px 20px;
+        }
+
+        .hero-content {
+            max-width: 850px;
+        }
+
+        .badge {
+            display: inline-block;
+            background: #e0e7ff;
+            color: #4338ca;
+            padding: 10px 18px;
+            border-radius: 30px;
+            font-weight: bold;
+            margin-bottom: 25px;
+        }
+
+        .hero h1 {
+            font-size: 58px;
+            line-height: 1.1;
+            margin-bottom: 20px;
+            background: linear-gradient(135deg, #4f46e5, #7c3aed, #06b6d4);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        .hero p {
+            font-size: 19px;
+            line-height: 1.7;
+            color: #64748b;
+            margin-bottom: 35px;
+        }
+
+        /* Button */
+        .main-btn {
+            display: inline-block;
+            text-decoration: none;
+            color: white;
+            background: linear-gradient(135deg, #4f46e5, #7c3aed);
+            padding: 15px 30px;
+            border-radius: 12px;
+            font-size: 17px;
+            font-weight: bold;
+            box-shadow: 0 10px 25px rgba(79, 70, 229, 0.25);
+            transition: 0.3s ease;
+        }
+
+        .main-btn:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 15px 30px rgba(79, 70, 229, 0.35);
+        }
+
+        /* Feature Cards */
+        .features {
+            width: 90%;
+            max-width: 1100px;
+            margin: 0 auto 70px;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+            gap: 22px;
+        }
+
+        .feature {
+            background: white;
+            padding: 30px 20px;
+            text-align: center;
+            border-radius: 20px;
+            box-shadow: 0 10px 30px rgba(15, 23, 42, 0.08);
+            transition: 0.3s ease;
+        }
+
+        .feature:hover {
+            transform: translateY(-7px);
+        }
+
+        .feature-icon {
+            font-size: 40px;
+            margin-bottom: 15px;
+        }
+
+        .feature h3 {
+            color: #1e1b4b;
+            margin-bottom: 10px;
+        }
+
+        .feature p {
+            color: #64748b;
+            line-height: 1.5;
+        }
+
+        /* Footer */
+        footer {
+            background: #1e1b4b;
+            color: white;
+            text-align: center;
+            padding: 25px;
+        }
+
+        footer p {
+            opacity: 0.9;
+        }
+
+        /* Mobile */
+        @media (max-width: 600px) {
+            nav {
+                padding: 15px 5%;
+            }
+
+            .logo {
+                font-size: 19px;
+            }
+
+            nav a {
+                margin-left: 10px;
+                font-size: 14px;
+            }
+
+            .hero h1 {
+                font-size: 40px;
+            }
+
+            .hero p {
+                font-size: 16px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Navigation -->
+    <nav>
+        <div class="logo">🎓 My Learning Portal</div>
+
+        <div>
+            <a href="/">Home</a>
+            <a href="/subjects/">Subjects</a>
+        </div>
+    </nav>
+
+
+    <!-- Hero Section -->
+    <section class="hero">
+
+        <div class="hero-content">
+
+            <div class="badge">
+                📚 Welcome to Your Learning Space
+            </div>
+
+            <h1>Learn. Grow. Succeed.</h1>
+
+            <p>
+                Welcome to My Learning Portal — your simple and organized
+                platform for accessing subjects, study materials and
+                educational resources.
+            </p>
+
+            <a href="/subjects/" class="main-btn">
+                Explore Subjects →
+            </a>
+
+        </div>
+
+    </section>
+
+
+    <!-- Features -->
+    <section class="features">
+
+        <div class="feature">
+            <div class="feature-icon">📚</div>
+            <h3>All Subjects</h3>
+            <p>
+                Access all your important university subjects in one place.
+            </p>
+        </div>
+
+        <div class="feature">
+            <div class="feature-icon">📝</div>
+            <h3>Study Resources</h3>
+            <p>
+                Find lecture notes, assignments and useful course material.
+            </p>
+        </div>
+
+        <div class="feature">
+            <div class="feature-icon">🎯</div>
+            <h3>Easy Learning</h3>
+            <p>
+                Keep your study material organized and easy to access.
+            </p>
+        </div>
+
+        <div class="feature">
+            <div class="feature-icon">🚀</div>
+            <h3>Achieve More</h3>
+            <p>
+                Stay organized and make your learning journey more productive.
+            </p>
+        </div>
+
+    </section>
+
+
+    <!-- Footer -->
+    <footer>
+        <p>© 2026 Usman Tanveer | All Rights Reserved</p>
+    </footer>
+
+</body>
+</html>
